@@ -1,4 +1,4 @@
-package com.he176875.myapplication;
+package com.he176875.myapplication.internalstorage;
 
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.he176875.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
 
