@@ -1,58 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".internalstorage.MainActivity">
 
-    <Button
-        android:id="@+id/btnReadRaw"
-        android:layout_width="wrap_content"
+    <!-- Ô nhập tên thư mục -->
+    <EditText
+        android:id="@+id/folderNameEt"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
-        android:text="Read Raw Resource"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp" />
+        android:hint="Folder Name..." />
 
-    <TextView
-        android:id="@+id/tvRawContent"
+    <!-- Nút tạo thư mục -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createFolderBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        android:padding="8dp"
-        android:background="#E8E8E8"
-        android:text="Raw file content will appear here"
-        app:layout_constraintTop_toBottomOf="@id/btnReadRaw"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginTop="10dp"
+        android:text="Create Folder" />
 
-    <Button
-        android:id="@+id/btnFileIO"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Write and Read Internal File"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvRawContent"
-        android:layout_marginTop="40dp" />
-
-    <TextView
-        android:id="@+id/tvFileContent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        android:padding="8dp"
-        android:background="#E8E8E8"
-        android:text="Internal file content will appear here"
-        app:layout_constraintTop_toBottomOf="@id/btnFileIO"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
