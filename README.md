@@ -86,12 +86,12 @@ Một nút để tạo thư mục
 # 🔧 Permissions
 
 # <!-- Android < 11 -->
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+## <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+## <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
 # <!-- Android >= 11 -->
-<uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
-tools:ignore="ScopedStorage" />
+## <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+##  tools:ignore="ScopedStorage" />
 Cấp quyền tương ứng theo phiên bản
 
 ## ⚙️ Application
